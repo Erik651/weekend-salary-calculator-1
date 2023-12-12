@@ -23,6 +23,7 @@ function addEmployee(){
     
     //create new html element to display the values entered to represent the new employee information
     let newEmployeeElement = document.createElement("div");
+    newEmployeeElement.classList.add("column");
     newEmployeeElement.innerHTML = "<p>" + firstName + " " + lastName + " " + idNumber + " " + jobTitle + " " + annualSalary +"</p>"
 
     
@@ -48,12 +49,35 @@ function addEmployee(){
 
     
 
-
-            console.log(sum)
+            
+            console.log(sum);
             console.log(totalAnnualSalaryArray);
-    
-    }
-        
+            
+            let monthlySum = (sum/12);//take this total and push, append to footer
+
+            console.log(monthlySum)}
+
+
+
+
+
+            let monthlySum = 0; 
+
+
+            let footer = document.getElementsByTagName('footer')[0];
+
+  // Get the HTML element using JavaScript
+  function overBudget(){
+      // Check the condition and apply styles accordingly
+  if (monthlySum < 1666.67) {
+    footer.classList.add('over-budget','conditionA');
+  } else {
+    footer.classList.add('over-budget', 'conditionB');}
+
+    //monthlySum.appendChild.document.getElementById(footer)
+}
+
+overBudget();
         //console.log(sum);
         // }
         //totalSalaryArray.forEach(function(totalSalaryArray){

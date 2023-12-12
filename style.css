@@ -9,17 +9,24 @@ color: rgb(30, 3, 16);
 text-align: center
 ;}
 
+h2 {
+    border: 1px solid black;
+    color: white;
+    width: 150px;
+    height: 60px;
+}
+#employeeList{
 
-
+    column-gap: 40%;
+}
 form { 
-    border: 100px;
-border-color: blue;
+    border: 10px solid black;
+
 
 }
 
 input {
-    border-right: 100px;
-    border-style:  ;
+    border: 5px solid green;
     width: 100%;
     height: 10px;
     padding: 12px 10px;
@@ -27,11 +34,27 @@ input {
     box-sizing: border-box;
 }
 
+table {
+    border: 3px solid green;
+    width: 1px;
+    height: 10px;
+}
 
 
+footer {width: 100%;
+height: 80px;
+border: 10px solid black; };
 
-footer {color: red;
-background-color: aquamarine;}
+.over-budget.conditionA {background-color: green;
+    color: black;
+
+
+}
+
+.over-budget.conditionB {background-color: red;
+color: chartreuse;}
+
+
 
 
 
